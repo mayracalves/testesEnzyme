@@ -3,17 +3,9 @@ import store, {Store} from '../store/store'
 import React, {Component} from "react";
 import Header from "../components/Header/Header";
 
-export default function MobXProvider() {
-  return (
-    <Provider store={store}>
-      <Home/>
-    </Provider>
-  )
-}
-
 @inject('store')
 @observer
-export class Home extends Component<{ store?: Store }> {
+export default class Home extends Component<{ store?: Store }> {
   componentDidMount() {
     this.props.store?.carregarElementos();
   }
