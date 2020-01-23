@@ -3,7 +3,7 @@
 ### Tópicos
 
 - `test`, `it`, `beforeEach`, `describe` para Jest.
-- `shallow`, `render`, `mount` rendering functions.
+- `shallow`, `mount` rendering functions.
 - utilizando o find do enzyme.
 - importância das snapshots para css.
 - Mock de Propriedades.
@@ -58,3 +58,9 @@ Além disso, outra funcionalidade que o enzyme nos disponibiliza é poder acessa
 ###### Com Hooks
 
 No hooks samos mais limitados quando queremos testar nosso component. Se formos utilizar o `shallow`, não podemos utilizar o `useEffects`, e não teremos como acessar funções internas do component. A manipulação das variáveis internas através do `useState` funciona normalmente. Caso for utilizado o `mount` invés do `shallow`, ganhamos a execução do `useEffect`, porém o acessos a "métodos" internos do component não é possível.
+
+###### Roteiro
+
+- Em `UnicredLabel` exemplificar a diferença entre `shallow` e `mount`, dentro do cenário do `styled-components`. Mostrar interoperabilidade entre `it` e `test`; Mostrar método `prop`. 
+
+- Em `UnicredSelect` demonstrar como o `length` pode ser usado. Usar o exemplo com `data-testid`, que irá possuir mais de dois valores por conta do `styled-components`. Introduzir o mock de dependências. Demonstrar `at` e `first`. Comentar sobre o `attrs` do `styled-components` presente no `Titulo.tsx`.
