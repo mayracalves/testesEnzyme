@@ -1,4 +1,4 @@
-import {render, shallow, mount, ReactWrapper} from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
 import 'jest-styled-components';
 
@@ -21,24 +21,19 @@ describe('Unit Test: Select', () => {
 
   beforeEach(() => {
     wrapper = mount(
-        <Select
-          onChange={onChange}
-          title="mockTitulo"
-          itens={itensSelects}
-          disabled={false}
-          opcaoVazia={true}
-        />
+      <Select
+        onChange={onChange}
+        title="mockTitulo"
+        itens={itensSelects}
+        disabled={false}
+        opcaoVazia={true}
+      />
     )
   });
 
-  it('deve montar 3 options', () => {
+  it('deve montar 2 options', () => {
     const options = wrapper.find('option').length;
-    expect(options).toEqual(3);
-  });
-
-  it('deve renderizar select_selecione', () => {
-    const foiRenderizado = wrapper.find('[data-testid="select_selecione"]').length > 0;
-    expect(foiRenderizado).toEqual(true);
+    expect(options).toEqual(2);
   });
 
   it('deve executar callback onChange', () => {

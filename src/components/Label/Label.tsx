@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Container from './StyledComponents';
 
-const Label = ({ nome, descricaoLabel }) => (
+const Label = ({nome, descricaoLabel}) => (
   <Container htmlFor={nome}>{descricaoLabel}</Container>
 );
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import {storiesOf} from '@storybook/react';
+import {action} from '@storybook/addon-actions';
 
 import Header from './Header';
-import {itensAgencia, itensCooperativa, itensTipoOperacao} from "./Header.constants";
+import {itensAgencia, itensCooperativa} from "./Header.constants";
 
 
 storiesOf('Header', module)
@@ -32,22 +32,13 @@ storiesOf('Header', module)
       itensAgencia={itensAgencia}
     />
   ))
-  .add('Com Tipo Operação', () => (
-    <Header
-      titulo="Apenas titulo"
-      exibirTipoOperacao
-      itensTipoOperacao={itensTipoOperacao}
-    />
-  ))
-  .add('Com Cooperativa, Agencia e Tipo Operação', () => (
+  .add('Com Cooperativa, Agencia', () => (
     <Header
       titulo="Apenas titulo"
       exibirCooperativa
       itensCooperativa={itensCooperativa}
       exibirAgencia
       itensAgencia={itensAgencia}
-      exibirTipoOperacao
-      itensTipoOperacao={itensTipoOperacao}
     />
   ));
 

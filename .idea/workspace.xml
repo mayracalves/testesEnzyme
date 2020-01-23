@@ -2,20 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ea299b-2635-49e6-9339-16c922218a25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.hooks.spec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/setaMenos.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/setaMenos.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/StyledComponents/Retorno.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/StyledComponents/Retorno.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/StyledComponents/Titulo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/StyledComponents/Titulo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.class.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.class.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +55,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,74 +63,70 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Unit Test: UnicredSelect.deve executar callback onChange">
-    <configuration name="Unit Test: UnicredLabel.deve renderizar Label com texto passado por parâmetro" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Unit Test: Select">
+    <configuration name="Header" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/UnicredLabel/UnicredLabel.spec.tsx" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Header/Header.spec.tsx" />
       <test-names>
-        <test-name value="Unit Test: UnicredLabel" />
-        <test-name value="deve renderizar Label com texto passado por parâmetro" />
+        <test-name value="Header" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit Test: UnicredSelect.deve chamar onChange com valor so option selecionado" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Integration Test: Home Hooks" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/UnicredSelect/UnicredSelect.spec.tsx" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.hooks.spec.tsx" />
       <test-names>
-        <test-name value="Unit Test: UnicredSelect" />
-        <test-name value="deve chamar onChange com valor so option selecionado" />
+        <test-name value="Integration Test: Home Hooks" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit Test: UnicredSelect.deve executar callback onChange" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Integration Test: Home Hooks.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/UnicredSelect/UnicredSelect.spec.tsx" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.hooks.spec.tsx" />
       <test-names>
-        <test-name value="Unit Test: UnicredSelect" />
-        <test-name value="deve executar callback onChange" />
+        <test-name value="Integration Test: Home Hooks" />
+        <test-name value="deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit Test: UnicredSelect.deve montar 2 options" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit Test: Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/UnicredSelect/UnicredSelect.spec.tsx" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" />
       <test-names>
-        <test-name value="Unit Test: UnicredSelect" />
-        <test-name value="deve montar 2 options" />
+        <test-name value="Unit Test: Home" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit Test: UnicredSelect.deve renderizar select_selecione" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit Test: Select" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/UnicredSelect/UnicredSelect.spec.tsx" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Select/Select.spec.tsx" />
       <test-names>
-        <test-name value="Unit Test: UnicredSelect" />
-        <test-name value="deve renderizar select_selecione" />
+        <test-name value="Unit Test: Select" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -139,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Unit Test: UnicredSelect.deve executar callback onChange" />
-        <item itemvalue="Jest.Unit Test: UnicredSelect.deve chamar onChange com valor so option selecionado" />
-        <item itemvalue="Jest.Unit Test: UnicredSelect.deve renderizar select_selecione" />
-        <item itemvalue="Jest.Unit Test: UnicredSelect.deve montar 2 options" />
-        <item itemvalue="Jest.Unit Test: UnicredLabel.deve renderizar Label com texto passado por parâmetro" />
+        <item itemvalue="Jest.Unit Test: Select" />
+        <item itemvalue="Jest.Header" />
+        <item itemvalue="Jest.Unit Test: Home" />
+        <item itemvalue="Jest.Integration Test: Home Hooks.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" />
+        <item itemvalue="Jest.Integration Test: Home Hooks" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +178,7 @@
       <workItem from="1579577460812" duration="14197000" />
       <workItem from="1579747488393" duration="7725000" />
       <workItem from="1579755238991" duration="5010000" />
+      <workItem from="1579788867543" duration="10573000" />
     </task>
     <task id="LOCAL-00001" summary="- configurações e informações iniciais.">
       <created>1579741947814</created>
@@ -207,14 +214,28 @@
     <option name="LAST_COMMIT_MESSAGE" value="- adição dos exemplos com hooks." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="200" width="800" height="677" key="#TypeScript" timestamp="1579792187036">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="200" width="800" height="677" key="#TypeScript/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579792187036" />
+    <state x="388" y="1178" width="1166" height="570" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579789116159">
+      <screen x="288" y="1080" width="1366" height="768" />
+    </state>
+    <state x="388" y="1178" width="1166" height="570" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789116159" />
     <state x="333" y="329" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579752740244">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="333" y="329" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1579752740244" />
-    <state x="204" y="175" width="782" height="801" key="CommitChangelistDialog2" timestamp="1579756397452">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="153" y="175" width="782" height="801" key="CommitChangelistDialog2" timestamp="1579800641461">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="204" y="175" width="782" height="801" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1579756397452" />
+    <state x="153" y="175" key="CommitChangelistDialog2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800641461" />
+    <state width="546" height="656" key="DebuggerActiveHint" timestamp="1579794815674">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="546" height="656" key="DebuggerActiveHint/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579794815674" />
+    <state width="388" height="466" key="DebuggerActiveHint/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789963271" />
     <state x="0" y="129" width="2048" height="896" key="DiffContextDialog" timestamp="1579755040258">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -223,22 +244,82 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="659" y="388" width="424" height="486" key="FileChooserDialogImpl/0.0.2560.1080@0.0.2560.1080" timestamp="1579743725402" />
-    <state width="1569" height="269" key="GridCell.Tab.0.bottom" timestamp="1579755222921">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state width="1899" height="304" key="GridCell.Tab.0.bottom" timestamp="1579800644195">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222921" />
-    <state width="1569" height="269" key="GridCell.Tab.0.center" timestamp="1579755222920">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state width="1899" height="304" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800644195" />
+    <state width="1345" height="243" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
+    <state width="1899" height="304" key="GridCell.Tab.0.center" timestamp="1579800644195">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222920" />
-    <state width="1569" height="269" key="GridCell.Tab.0.left" timestamp="1579755222920">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state width="1899" height="304" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800644195" />
+    <state width="1345" height="243" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
+    <state width="1899" height="304" key="GridCell.Tab.0.left" timestamp="1579800644195">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222920" />
-    <state width="1569" height="269" key="GridCell.Tab.0.right" timestamp="1579755222921">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state width="1899" height="304" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800644195" />
+    <state width="1345" height="243" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
+    <state width="1899" height="304" key="GridCell.Tab.0.right" timestamp="1579800644195">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222921" />
+    <state width="1899" height="304" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800644195" />
+    <state width="1345" height="243" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
+    <state width="1899" height="243" key="GridCell.Tab.1.bottom" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="243" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
+    <state width="1899" height="243" key="GridCell.Tab.1.center" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="243" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
+    <state width="1899" height="243" key="GridCell.Tab.1.left" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="243" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
+    <state width="1899" height="243" key="GridCell.Tab.1.right" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="243" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
+    <state width="1899" height="243" key="GridCell.Tab.2.bottom" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.2.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.2.center" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.2.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.2.left" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.2.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.2.right" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.2.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.3.bottom" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.3.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.3.center" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.3.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.3.left" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.3.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1899" height="243" key="GridCell.Tab.3.right" timestamp="1579795879810">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="243" key="GridCell.Tab.3.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
     <state x="362" y="289" width="456" height="574" key="RollbackChangesDialog" timestamp="1579743275898">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -251,9 +332,22 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1627" y="284" width="605" height="512" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1579784175320" />
-    <state x="1411" y="364" width="672" height="678" key="search.everywhere.popup" timestamp="1579757982139">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="1058" y="364" width="672" height="678" key="search.everywhere.popup" timestamp="1579800142888">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1411" y="364" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1579757982139" />
+    <state x="1058" y="364" width="672" height="678" key="search.everywhere.popup/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800142888" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Home.class.tsx</url>
+          <line>68</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,8 +1,9 @@
+// @ts-nocheck
 import { mount } from 'enzyme';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import Header from './Header';
-import { itensAgencia, itensCooperativa, itensTipoOperacao } from './Header.constants';
+import { itensAgencia, itensCooperativa } from './Header.constants';
 
 describe('Header', () => {
   it('deve renderizar header_titulo com valor passado por titulo', () => {
@@ -12,39 +13,14 @@ describe('Header', () => {
         titulo="Titulo"
         valorCooperativa="566"
         valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
         itensAgencia={itensAgencia}
         itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
         onVoltar={() => {}}
         onChangeAgencia={() => {}}
         onChangeCooperativa={() => {}}
-        onChangeTipoOperacao={() => {}}
       />,
     );
     expect(wrapper.find('[data-testid="header_titulo"]').text()).toEqual('Titulo');
-  });
-
-  it('nao deve renderizar header_select_tipo_operacao', () => {
-    const wrapper = mount(
-      <Header
-        possuiRetorno={false}
-        titulo="Titulo"
-        valorCooperativa="566"
-        valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
-        itensAgencia={itensAgencia}
-        itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
-        onVoltar={() => {}}
-        onChangeAgencia={() => {}}
-        onChangeCooperativa={() => {}}
-        onChangeTipoOperacao={() => {}}
-        exibirAgencia
-      />,
-    );
-    const retorno = wrapper.find('[data-testid="header_select_tipo_operacao"]').length;
-    expect(retorno).toEqual(0);
   });
 
   it('nao deve renderizar header_select_cooperativa', () => {
@@ -54,14 +30,11 @@ describe('Header', () => {
         titulo="Titulo"
         valorCooperativa="566"
         valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
         itensAgencia={itensAgencia}
         itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
         onVoltar={() => {}}
         onChangeAgencia={() => {}}
         onChangeCooperativa={() => {}}
-        onChangeTipoOperacao={() => {}}
         exibirAgencia
       />,
     );
@@ -76,89 +49,56 @@ describe('Header', () => {
         titulo="Titulo"
         valorCooperativa="566"
         valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
         itensAgencia={itensAgencia}
         itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
         onVoltar={() => {}}
         onChangeAgencia={() => {}}
         onChangeCooperativa={() => {}}
-        onChangeTipoOperacao={() => {}}
-        exibirTipoOperacao
       />,
     );
     const retorno = wrapper.find('[data-testid="header_select_agencia"]').length;
     expect(retorno).toEqual(0);
   });
 
-  // it('deve executar callback onChangeTipoOperacao', () => {
-  //   const onChangeTipoOperacao = jest.fn();
-  //   const wrapper = mount(
-  //     <Header
-  //       possuiRetorno={false}
-  //       titulo="Titulo"
-  //       valorCooperativa="566"
-  //       valorAgencia="Agencia 1"
-  //       valorTipoOperacao="Desconto"
-  //       itensAgencia={itensAgencia}
-  //       itensCooperativa={itensCooperativa}
-  //       itensTipoOperacao={itensTipoOperacao}
-  //       onVoltar={() => {}}
-  //       onChangeAgencia={() => {}}
-  //       onChangeCooperativa={() => {}}
-  //       onChangeTipoOperacao={onChangeTipoOperacao}
-  //       exibirTipoOperacao
-  //     />,
-  //   );
-  //   wrapper.find('[data-testid="header_select_tipo_operacao"]').first().prop('onChange')();
-  //   expect(onChangeTipoOperacao).toHaveBeenCalled();
-  // });
-  //
-  // it('deve  executar callback onChangeCooperativa', () => {
-  //   const onChangeCooperativa = jest.fn();
-  //   const wrapper = mount(
-  //     <Header
-  //       possuiRetorno={false}
-  //       titulo="Titulo"
-  //       valorCooperativa="566"
-  //       valorAgencia="Agencia 1"
-  //       valorTipoOperacao="Desconto"
-  //       itensAgencia={itensAgencia}
-  //       itensCooperativa={itensCooperativa}
-  //       itensTipoOperacao={itensTipoOperacao}
-  //       onVoltar={() => {}}
-  //       onChangeAgencia={() => {}}
-  //       onChangeCooperativa={onChangeCooperativa}
-  //       onChangeTipoOperacao={() => {}}
-  //       exibirCooperativa
-  //     />,
-  //   );
-  //   wrapper.find('[data-testid="header_select_cooperativa"]').first().prop('onChange')();
-  //   expect(onChangeCooperativa).toHaveBeenCalled();
-  // });
-  //
-  // it('deve executar callback onChangeAgencia', () => {
-  //   const onChangeAgencia = jest.fn();
-  //   const wrapper = mount(
-  //     <Header
-  //       possuiRetorno={false}
-  //       titulo="Titulo"
-  //       valorCooperativa="566"
-  //       valorAgencia="Agencia 1"
-  //       valorTipoOperacao="Desconto"
-  //       itensAgencia={itensAgencia}
-  //       itensCooperativa={itensCooperativa}
-  //       itensTipoOperacao={itensTipoOperacao}
-  //       onVoltar={() => {}}
-  //       onChangeAgencia={onChangeAgencia}
-  //       onChangeCooperativa={() => {}}
-  //       onChangeTipoOperacao={() => {}}
-  //       exibirAgencia
-  //     />,
-  //   );
-  //   const onChange = wrapper.find('[data-testid="header_select_agencia"]').first().prop('onChange')();
-  //   expect(onChangeAgencia).toHaveBeenCalled();
-  // });
+  it('deve  executar callback onChangeCooperativa', () => {
+    const onChangeCooperativa = jest.fn();
+    const wrapper = mount(
+      <Header
+        possuiRetorno={false}
+        titulo="Titulo"
+        valorCooperativa="566"
+        valorAgencia="Agencia 1"
+        itensAgencia={itensAgencia}
+        itensCooperativa={itensCooperativa}
+        onVoltar={() => {}}
+        onChangeAgencia={() => {}}
+        onChangeCooperativa={onChangeCooperativa}
+        exibirCooperativa
+      />,
+    );
+    wrapper.find('[data-testid="header_select_cooperativa"]').first().prop('onChange')();
+    expect(onChangeCooperativa).toHaveBeenCalled();
+  });
+
+  it('deve executar callback onChangeAgencia', () => {
+    const onChangeAgencia = jest.fn();
+    const wrapper = mount(
+      <Header
+        possuiRetorno={false}
+        titulo="Titulo"
+        valorCooperativa="566"
+        valorAgencia="Agencia 1"
+        itensAgencia={itensAgencia}
+        itensCooperativa={itensCooperativa}
+        onVoltar={() => {}}
+        onChangeAgencia={onChangeAgencia}
+        onChangeCooperativa={() => {}}
+        exibirAgencia
+      />,
+    );
+    wrapper.find('[data-testid="header_select_agencia"]').first().prop('onChange')();
+    expect(onChangeAgencia).toHaveBeenCalled();
+  });
 
   describe('quando select de agencia for desabilitado', () => {
     let wrapper;
@@ -171,14 +111,11 @@ describe('Header', () => {
           titulo="Titulo"
           valorCooperativa="566"
           valorAgencia="Agencia 1"
-          valorTipoOperacao="Desconto"
           itensAgencia={itensAgencia}
           itensCooperativa={itensCooperativa}
-          itensTipoOperacao={itensTipoOperacao}
           onVoltar={() => {}}
           onChangeAgencia={onChangeAgencia}
           onChangeCooperativa={() => {}}
-          onChangeTipoOperacao={() => {}}
           exibirAgencia
           desabilitarAgencia
         />,
@@ -207,14 +144,11 @@ describe('Header', () => {
           titulo="Titulo"
           valorCooperativa="566"
           valorAgencia="Agencia 1"
-          valorTipoOperacao="Desconto"
           itensAgencia={itensAgencia}
           itensCooperativa={itensCooperativa}
-          itensTipoOperacao={itensTipoOperacao}
           onVoltar={() => {}}
           onChangeAgencia={() => {}}
           onChangeCooperativa={onChangeCooperativa}
-          onChangeTipoOperacao={() => {}}
           desabilitarCooperativa
           exibirCooperativa
         />,
@@ -232,42 +166,6 @@ describe('Header', () => {
     });
   });
 
-  describe('quando select de tipo operacao for desabilitado', () => {
-    let wrapper;
-    const onChangeTipoOperacao = jest.fn();
-
-    beforeEach(() => {
-      wrapper = mount(
-        <Header
-          possuiRetorno={false}
-          titulo="Titulo"
-          valorCooperativa="566"
-          valorAgencia="Agencia 1"
-          valorTipoOperacao="Desconto"
-          itensAgencia={itensAgencia}
-          itensCooperativa={itensCooperativa}
-          itensTipoOperacao={itensTipoOperacao}
-          onVoltar={() => {}}
-          onChangeAgencia={() => {}}
-          onChangeCooperativa={() => {}}
-          onChangeTipoOperacao={() => {}}
-          desabilitarTipoOperacao
-          exibirTipoOperacao
-        />,
-      );
-    });
-
-    it('deve renderizar header_select_tipo_operacao com prop disabled igual a true', () => {
-      const disabled = wrapper.find('[data-testid="header_select_tipo_operacao"]').first().prop('disabled');
-      expect(disabled).toEqual(true);
-    });
-
-    it('nao deve executar callback onChangeTipoOperacao', () => {
-      wrapper.find('[data-testid="header_select_tipo_operacao"]').first().simulate('click');
-      expect(onChangeTipoOperacao).not.toHaveBeenCalled();
-    });
-  });
-
   describe('quando possuiRetorno for false', () => {
     let wrapper;
     const onVoltar = jest.fn();
@@ -278,14 +176,11 @@ describe('Header', () => {
         titulo="Titulo"
         valorCooperativa="566"
         valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
         itensAgencia={itensAgencia}
         itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
         onVoltar={onVoltar}
         onChangeAgencia={action('onChagenAgencia')}
         onChangeCooperativa={action('onChangeCooperativa')}
-        onChangeTipoOperacao={action('onChagenTipoOperacao')}
       />);
     });
 
@@ -309,14 +204,11 @@ describe('Header', () => {
         titulo="Titulo"
         valorCooperativa="566"
         valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
         itensAgencia={itensAgencia}
         itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
         onVoltar={onVoltar}
         onChangeAgencia={action('onChagenAgencia')}
         onChangeCooperativa={action('onChangeCooperativa')}
-        onChangeTipoOperacao={action('onChagenTipoOperacao')}
       />);
     });
 

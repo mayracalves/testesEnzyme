@@ -9,10 +9,10 @@ describe('Unit Test: Label', () => {
 
   beforeEach(() => {
     wrapperS = shallow(
-        <Label
-            descricaoLabel="mockDescricaoLavel"
-            nome="mockNome"
-        />
+      <Label
+        descricaoLabel="mockDescricaoLavel"
+        nome="mockNome"
+      />
     );
   });
 

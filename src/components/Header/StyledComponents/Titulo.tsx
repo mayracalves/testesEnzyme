@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const Color = cor => css`
   color: ${cor}
@@ -15,5 +15,5 @@ export default styled.h1.attrs({
     font-size: 24px;
     margin: 0 0 0 5px;
 
-    ${({ theme: { HeaderCorPrimaria: cor } }) => Color(cor)}
+    ${({theme: {HeaderCorPrimaria: cor}}) => Color(cor)}
 `;

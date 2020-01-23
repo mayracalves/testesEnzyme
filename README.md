@@ -15,7 +15,7 @@
 
 ###### Diferenças entre `test`, `it` e `describe`
 
-No jest todos podem funcionar juntos. O teste que será rodado será o que estiver dentro do callback do `test` ou do `it`. A grande única diferença entre eles é que com o `test` podemos ter cenários de testes isolados sem a necessidade de se utilizar os demais facilitadores, como o `describe`, `beforeEach`, `afterEach`;
+No jest todos podem funcionar juntos. O teste que será rodado será o que estiver dentro do callback do `test` ou do `it`. Tentao `test` quanto `it` podem ser executados sem o uso de um `describe`; 
 
 A grande vantagem de se utilizar o `describe` é a possilidade de poder fazer aninhamento entre vários outros `describe`.
 

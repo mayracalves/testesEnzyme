@@ -8,7 +8,6 @@ const Select = ({
   itens,
   onChange,
   title,
-  opcaoVazia,
   value,
   disabled,
 }) => (
@@ -24,9 +23,6 @@ const Select = ({
       disabled={disabled}
       autoComplete="nope"
     >
-      {/*{*/}
-      {/*  opcaoVazia && <UniSelect.Option data-testid="select_selecione"> Selecione </UniSelect.Option>*/}
-      {/*}*/}
       {
         itens.map(item => (
           <UniSelect.Option
@@ -45,14 +41,12 @@ Select.propTypes = {
   value: PropTypes.string,
   title: PropTypes.string,
   itens: PropTypes.arrayOf(PropTypes.object),
-  opcaoVazia: PropTypes.bool,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
 };
 
 Select.defaultProps = {
   value: 'Selecione',
-  opcaoVazia: true,
   title: '',
   itens: [],
   onChange: () => ({}),

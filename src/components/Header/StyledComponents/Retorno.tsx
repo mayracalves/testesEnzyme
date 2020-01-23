@@ -5,9 +5,9 @@ export default styled.div<any>`
    align-items: baseline;
 
    svg {
-    color: ${({ theme: { HeaderCorTerciaria: cor } }) => cor}
+    color: ${({theme: {HeaderCorTerciaria: cor}}) => cor}
     font-size: 16px;
     background: radial-gradient(white 50%, #ffffff00 50%);
-    cursor: ${({ possuiRetorno }) => (possuiRetorno ? 'pointer' : 'auto')};
+    cursor: ${({possuiRetorno}) => (possuiRetorno ? 'pointer' : 'auto')};
    }
 `;
