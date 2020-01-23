@@ -61,6 +61,6 @@ No hooks samos mais limitados quando queremos testar nosso component. Se formos 
 
 ###### Roteiro
 
-- Em `UnicredLabel` exemplificar a diferença entre `shallow` e `mount`, dentro do cenário do `styled-components`. Mostrar interoperabilidade entre `it` e `test`; Mostrar método `prop`. 
+- Em `Label` exemplificar a diferença entre `shallow` e `mount`, dentro do cenário do `styled-components`. Mostrar interoperabilidade entre `it` e `test`; Mostrar método `prop`. 
 
-- Em `UnicredSelect` demonstrar como o `length` pode ser usado. Usar o exemplo com `data-testid`, que irá possuir mais de dois valores por conta do `styled-components`. Introduzir o mock de dependências. Demonstrar `at` e `first`. Comentar sobre o `attrs` do `styled-components` presente no `Titulo.tsx`.
+- Em `Select` demonstrar como o `length` pode ser usado. Usar o exemplo com `data-testid`, que irá possuir mais de dois valores por conta do `styled-components`. Introduzir o mock de dependências. Demonstrar `at` e `first`. Comentar sobre o `attrs` do `styled-components` presente no `Titulo.tsx`.

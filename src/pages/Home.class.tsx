@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from '../../src/api';
-import UnicredHeader from "../components/UnicredHeader/UnicredHeader";
+import Header from "../components/Header/Header";
 
 export default class Home extends Component {
     state = {
@@ -68,7 +68,7 @@ export default class Home extends Component {
         }
         return (
             <div>
-                <UnicredHeader
+                <Header
                     titulo="Home"
                     possuiRetorno={false}
                     itensAgencia={this.state.agencias}

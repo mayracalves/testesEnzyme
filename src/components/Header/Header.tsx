@@ -5,9 +5,9 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faDotCircle } from '@fortawesome/free-solid-svg-icons';
 import UnicredHeaderContainer from './StyledComponents';
-import UnicredSelect from '../UnicredSelect/UnicredSelect';
+import Select from '../Select/Select';
 
-const UnicredHeader = ({
+const Header = ({
   titulo,
   possuiRetorno,
   onChangeCooperativa,
@@ -41,7 +41,7 @@ const UnicredHeader = ({
     <UnicredHeaderContainer.Selects>
       {
         exibirTipoOperacao && (
-          <UnicredSelect
+          <Select
             data-testid="unicred_header_select_tipo_operacao"
             disabled={desabilitarTipoOperacao}
             opcaoVazia={itensTipoOperacao.length === 0}
@@ -54,7 +54,7 @@ const UnicredHeader = ({
       }
       {
         exibirCooperativa && (
-          <UnicredSelect
+          <Select
             data-testid="unicred_header_select_cooperativa"
             disabled={desabilitarCooperativa}
             opcaoVazia={itensCooperativa.length === 0}
@@ -67,7 +67,7 @@ const UnicredHeader = ({
       }
       {
         exibirAgencia && (
-          <UnicredSelect
+          <Select
             data-testid="unicred_header_select_agencia"
             disabled={desabilitarAgencia}
             opcaoVazia={itensAgencia.length === 0}
@@ -82,7 +82,7 @@ const UnicredHeader = ({
   </UnicredHeaderContainer>
 );
 
-UnicredHeader.propTypes = {
+Header.propTypes = {
   titulo: string,
   possuiRetorno: bool,
   onChangeCooperativa: func,
@@ -103,7 +103,7 @@ UnicredHeader.propTypes = {
   exibirTipoOperacao: bool,
 };
 
-UnicredHeader.defaultProps = {
+Header.defaultProps = {
   titulo: 'Plataforma de Crédito',
   desabilitarCooperativa: false,
   desabilitarAgencia: false,
@@ -127,4 +127,4 @@ UnicredHeader.defaultProps = {
   onChangeTipoOperacao: () => {},
 };
 
-export default UnicredHeader;
+export default Header;

@@ -1,16 +1,57 @@
 import React, {useEffect, useState} from "react";
+import Header from "../components/Header/Header";
+import API from '../api';
 
 const Home: React.FC = () => {
 
-    const [valor, setarValor] = useState(0);
+    const [cooperativas, setCooperativas] = useState([]);
+    const [cooperativa, setCooperativa] = useState(null);
+    const [agencias, setAgencias] = useState([]);
+    const [agencia, setAgencia] = useState(null);
+    const [carregando, setCarregando] = useState(true);
+    const [erro, setErro] = useState(false);
 
     useEffect(() => {
+       Promise
+           .all([API.buscarAgencias(), API.buscarCooperativas()])
+           .then(([agencias, cooperativas]: any) => {
+               setAgencias(agencias);
+               setCooperativas(cooperativas);
+               setAgencia(agencias[0].value);
+               setCooperativa(cooperativas[0].value);
+           })
+           .catch(() => setErro(true))
+           .finally(() => setCarregando(false));
+    }, []);
 
-    }, [valor]);
+    if(erro) {
+        return (
+            <div>Ocorreu um erro ao carregar dados da aplicação. Tente novamente mais tarde.</div>
+        );
+    }
+
+    if (carregando) {
+        return (
+            <div>Carregando...</div>
+        )
+    }
 
     return (
-        <div className="App" onClick={() => setarValor(valor + 1)}>
-            olá mundo {valor}
+        <div>
+            <Header
+                titulo="Home"
+                possuiRetorno={false}
+                itensAgencia={agencias}
+                itensCooperativa={cooperativas}
+                onChangeCooperativa={c => setCooperativa(c)}
+                onChangeAgencia={(c) => setAgencia(c)}
+                exibirAgencia
+                exibirCooperativa
+            />
+            <div>
+                <div>Cooperativa Selecionada: {cooperativa}</div>
+                <div>Agencia Selecionada: {agencia}</div>
+            </div>
         </div>
     );
 };

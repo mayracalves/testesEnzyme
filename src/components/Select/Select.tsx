@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import UniSelect from './StyledComponents';
-import UnicredLabel from '../UnicredLabel/UnicredLabel';
+import Label from '../Label/Label';
 
-const UnicredSelect = ({
+const Select = ({
   itens,
   onChange,
   title,
@@ -13,7 +13,7 @@ const UnicredSelect = ({
   disabled,
 }) => (
   <UniSelect>
-    <UnicredLabel
+    <Label
       nome={title}
       descricaoLabel={title}
     />
@@ -41,7 +41,7 @@ const UnicredSelect = ({
   </UniSelect>
 );
 
-UnicredSelect.propTypes = {
+Select.propTypes = {
   value: PropTypes.string,
   title: PropTypes.string,
   itens: PropTypes.arrayOf(PropTypes.object),
@@ -50,7 +50,7 @@ UnicredSelect.propTypes = {
   disabled: PropTypes.bool,
 };
 
-UnicredSelect.defaultProps = {
+Select.defaultProps = {
   value: 'Selecione',
   opcaoVazia: true,
   title: '',
@@ -58,4 +58,4 @@ UnicredSelect.defaultProps = {
   onChange: () => ({}),
 };
 
-export default UnicredSelect;
+export default Select;

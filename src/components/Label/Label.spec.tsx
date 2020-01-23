@@ -2,14 +2,14 @@ import {shallow, ShallowWrapper} from 'enzyme';
 import React from 'react';
 import 'jest-styled-components';
 
-import UnicredLabel from './UnicredLabel';
+import Label from './Label';
 
-describe('Unit Test: UnicredLabel', () => {
+describe('Unit Test: Label', () => {
   let wrapperS: ShallowWrapper;
 
   beforeEach(() => {
     wrapperS = shallow(
-        <UnicredLabel
+        <Label
             descricaoLabel="mockDescricaoLavel"
             nome="mockNome"
         />

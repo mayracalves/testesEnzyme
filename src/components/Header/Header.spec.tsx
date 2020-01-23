@@ -1,13 +1,13 @@
 import { mount } from 'enzyme';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
-import UnicredHeader from './UnicredHeader';
-import { itensAgencia, itensCooperativa, itensTipoOperacao } from './UnicredHeader.constants';
+import Header from './Header';
+import { itensAgencia, itensCooperativa, itensTipoOperacao } from './Header.constants';
 
-describe('UnicredHeader', () => {
+describe('Header', () => {
   it('deve renderizar unicred_header_titulo com valor passado por titulo', () => {
     const wrapper = mount(
-      <UnicredHeader
+      <Header
         possuiRetorno={false}
         titulo="Titulo"
         valorCooperativa="566"
@@ -27,7 +27,7 @@ describe('UnicredHeader', () => {
 
   it('nao deve renderizar unicred_header_select_tipo_operacao', () => {
     const wrapper = mount(
-      <UnicredHeader
+      <Header
         possuiRetorno={false}
         titulo="Titulo"
         valorCooperativa="566"
@@ -49,7 +49,7 @@ describe('UnicredHeader', () => {
 
   it('nao deve renderizar unicred_header_select_cooperativa', () => {
     const wrapper = mount(
-      <UnicredHeader
+      <Header
         possuiRetorno={false}
         titulo="Titulo"
         valorCooperativa="566"
@@ -71,7 +71,7 @@ describe('UnicredHeader', () => {
 
   it('nao deve renderizar unicred_header_select_agencia', () => {
     const wrapper = mount(
-      <UnicredHeader
+      <Header
         possuiRetorno={false}
         titulo="Titulo"
         valorCooperativa="566"
@@ -94,7 +94,7 @@ describe('UnicredHeader', () => {
   // it('deve executar callback onChangeTipoOperacao', () => {
   //   const onChangeTipoOperacao = jest.fn();
   //   const wrapper = mount(
-  //     <UnicredHeader
+  //     <Header
   //       possuiRetorno={false}
   //       titulo="Titulo"
   //       valorCooperativa="566"
@@ -117,7 +117,7 @@ describe('UnicredHeader', () => {
   // it('deve  executar callback onChangeCooperativa', () => {
   //   const onChangeCooperativa = jest.fn();
   //   const wrapper = mount(
-  //     <UnicredHeader
+  //     <Header
   //       possuiRetorno={false}
   //       titulo="Titulo"
   //       valorCooperativa="566"
@@ -140,7 +140,7 @@ describe('UnicredHeader', () => {
   // it('deve executar callback onChangeAgencia', () => {
   //   const onChangeAgencia = jest.fn();
   //   const wrapper = mount(
-  //     <UnicredHeader
+  //     <Header
   //       possuiRetorno={false}
   //       titulo="Titulo"
   //       valorCooperativa="566"
@@ -166,7 +166,7 @@ describe('UnicredHeader', () => {
 
     beforeEach(() => {
       wrapper = mount(
-        <UnicredHeader
+        <Header
           possuiRetorno={false}
           titulo="Titulo"
           valorCooperativa="566"
@@ -202,7 +202,7 @@ describe('UnicredHeader', () => {
 
     beforeEach(() => {
       wrapper = mount(
-        <UnicredHeader
+        <Header
           possuiRetorno={false}
           titulo="Titulo"
           valorCooperativa="566"
@@ -238,7 +238,7 @@ describe('UnicredHeader', () => {
 
     beforeEach(() => {
       wrapper = mount(
-        <UnicredHeader
+        <Header
           possuiRetorno={false}
           titulo="Titulo"
           valorCooperativa="566"
@@ -273,7 +273,7 @@ describe('UnicredHeader', () => {
     const onVoltar = jest.fn();
 
     beforeEach(() => {
-      wrapper = mount(<UnicredHeader
+      wrapper = mount(<Header
         possuiRetorno={false}
         titulo="Titulo"
         valorCooperativa="566"
@@ -304,7 +304,7 @@ describe('UnicredHeader', () => {
     const onVoltar = jest.fn();
 
     beforeEach(() => {
-      wrapper = mount(<UnicredHeader
+      wrapper = mount(<Header
         possuiRetorno
         titulo="Titulo"
         valorCooperativa="566"

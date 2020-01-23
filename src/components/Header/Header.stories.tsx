@@ -2,45 +2,45 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import UnicredHeader from './UnicredHeader';
-import {itensAgencia, itensCooperativa, itensTipoOperacao} from "./UnicredHeader.constants";
+import Header from './Header';
+import {itensAgencia, itensCooperativa, itensTipoOperacao} from "./Header.constants";
 
 
-storiesOf('UnicredHeader', module)
+storiesOf('Header', module)
   .add('Normal', () => (
-    <UnicredHeader
+    <Header
       possuiRetorno={false}
     />
   ))
   .add('Com Retorno', () => (
-    <UnicredHeader
+    <Header
       possuiRetorno
       onVoltar={action('onVoltar')}
     />
   ))
   .add('Com Cooperativa', () => (
-    <UnicredHeader
+    <Header
       titulo="Apenas titulo"
       exibirCooperativa
       itensCooperativa={itensCooperativa}
     />
   ))
   .add('Com Agencia', () => (
-    <UnicredHeader
+    <Header
       titulo="Apenas titulo"
       exibirAgencia
       itensAgencia={itensAgencia}
     />
   ))
   .add('Com Tipo Operação', () => (
-    <UnicredHeader
+    <Header
       titulo="Apenas titulo"
       exibirTipoOperacao
       itensTipoOperacao={itensTipoOperacao}
     />
   ))
   .add('Com Cooperativa, Agencia e Tipo Operação', () => (
-    <UnicredHeader
+    <Header
       titulo="Apenas titulo"
       exibirCooperativa
       itensCooperativa={itensCooperativa}

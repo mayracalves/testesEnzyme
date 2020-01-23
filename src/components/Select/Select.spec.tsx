@@ -2,7 +2,7 @@ import {render, shallow, mount, ReactWrapper} from 'enzyme';
 import React from 'react';
 import 'jest-styled-components';
 
-import UnicredSelect from './UnicredSelect';
+import Select from './Select';
 
 const itensSelects = [
   {
@@ -15,13 +15,13 @@ const itensSelects = [
   },
 ];
 
-describe('Unit Test: UnicredSelect', () => {
+describe('Unit Test: Select', () => {
   let wrapper: ReactWrapper;
   let onChange = jest.fn();
 
   beforeEach(() => {
     wrapper = mount(
-        <UnicredSelect
+        <Select
           onChange={onChange}
           title="mockTitulo"
           itens={itensSelects}

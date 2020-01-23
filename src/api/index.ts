@@ -1,4 +1,4 @@
-import { itensAgencia, itensCooperativa } from "../components/UnicredHeader/UnicredHeader.constants";
+import { itensAgencia, itensCooperativa } from "../components/Header/Header.constants";
 
 export default {
     buscarAgencias() {
