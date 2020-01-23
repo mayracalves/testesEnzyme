@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ea299b-2635-49e6-9339-16c922218a25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.mobx.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +158,7 @@
       <workItem from="1579577460812" duration="14197000" />
       <workItem from="1579747488393" duration="7725000" />
       <workItem from="1579755238991" duration="5010000" />
-      <workItem from="1579788867543" duration="12389000" />
+      <workItem from="1579788867543" duration="13910000" />
     </task>
     <task id="LOCAL-00001" summary="- configurações e informações iniciais.">
       <created>1579741947814</created>
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579800743865</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- adiciona teste de mobx">
+      <created>1579802742134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579802742134</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +206,8 @@
     <MESSAGE value="- exemplos iniciais e storybook" />
     <MESSAGE value="- adição dos exemplos com hooks." />
     <MESSAGE value="- correção de todos os testes e testes com hooks e classe." />
-    <option name="LAST_COMMIT_MESSAGE" value="- correção de todos os testes e testes com hooks e classe." />
+    <MESSAGE value="- adiciona teste de mobx" />
+    <option name="LAST_COMMIT_MESSAGE" value="- adiciona teste de mobx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="200" width="800" height="677" key="#TypeScript" timestamp="1579792187036">
@@ -215,11 +222,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="333" y="329" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1579752740244" />
-    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2" timestamp="1579800743690">
+    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2" timestamp="1579802742017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="204" y="175" width="782" height="801" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1579756397452" />
-    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800743690" />
+    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579802742017" />
     <state width="546" height="656" key="DebuggerActiveHint" timestamp="1579794815674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

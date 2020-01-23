@@ -5,12 +5,10 @@
 - `test`, `it`, `beforeEach`, `describe` para Jest.
 - `shallow`, `mount` rendering functions.
 - utilizando o find do enzyme.
-- importância das snapshots para css.
 - Mock de Propriedades.
 - Mock de Módulos/Dependências.
-- como fazer mock de modulos.
-- Enzyme com Hooks.
 - Enzyme com Classes.
+- Enzyme com Hooks.
 - Enzyme com MobX.
 
 ###### Diferenças entre `test`, `it` e `describe`
@@ -64,3 +62,11 @@ No hooks samos mais limitados quando queremos testar nosso component. Se formos 
 - Em `Label` exemplificar a diferença entre `shallow` e `mount`, dentro do cenário do `styled-components`. Mostrar interoperabilidade entre `it` e `test`; Mostrar método `prop`. 
 
 - Em `Select` demonstrar como o `length` pode ser usado. Usar o exemplo com `data-testid`, que irá possuir mais de dois valores por conta do `styled-components`. Introduzir o mock de dependências. Demonstrar `at` e `first`. Comentar sobre o `attrs` do `styled-components` presente no `Titulo.tsx`.
+
+- Em `store`, demonstrar a possilbidade de realizar os testes de forma isalada, através do objeto criado pelo mobx. Exemplificar como que é possível fazer o mock de dependências. 
+
+- Em `Home.class`, demonstrar a possibilidade de criação de testes unitários e de integração sem muitas alterações. Falar sobre o `setState` e o `instance`. Além de falar sobre o `disableLifecycleMethods`. Comentar sobre a possilibidade do assincronismo `setState`.
+
+- Em `Home.mobx` comentar sobre a simelhança do teste de integração com os testes de integração do `Home.class`. 
+
+- Em `Home.hooks`, demostrar a impossilibidade de realizar testes de elementos internos, apenas testes que podem acessar o "html" gerado. Comentar sobre o `act` para use de `useEffects` assíncronos.

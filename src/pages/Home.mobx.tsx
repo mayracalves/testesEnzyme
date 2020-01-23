@@ -1,6 +1,6 @@
-import {inject, observer, Provider} from "mobx-react";
-import store, {Store} from '../store/store'
-import React, {Component} from "react";
+import { inject, observer } from "mobx-react";
+import { Store } from '../store/store'
+import React, { Component } from "react";
 import Header from "../components/Header/Header";
 
 @inject('store')

@@ -7,7 +7,7 @@ import API from "../api";
 import {itensAgencia, itensCooperativa} from "../components/Header/Header.constants";
 
 describe('Unit Test: Home', () => {
-  let wrapper: ShallowWrapper<Home>;
+  let wrapper: ShallowWrapper;
 
   beforeEach(() => {
     wrapper = shallow(<Home/>, {disableLifecycleMethods: true});
