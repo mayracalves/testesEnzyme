@@ -4,7 +4,7 @@ import {
 } from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faDotCircle } from '@fortawesome/free-solid-svg-icons';
-import UnicredHeaderContainer from './StyledComponents';
+import HeaderContainer from './StyledComponents';
 import Select from '../Select/Select';
 
 const Header = ({
@@ -27,22 +27,22 @@ const Header = ({
   exibirAgencia,
   exibirTipoOperacao,
 }) => (
-  <UnicredHeaderContainer>
-    <UnicredHeaderContainer.Descricao>
-      <UnicredHeaderContainer.Retorno possuiRetorno={possuiRetorno}>
+  <HeaderContainer>
+    <HeaderContainer.Descricao>
+      <HeaderContainer.Retorno possuiRetorno={possuiRetorno}>
         <FontAwesomeIcon
           onClick={possuiRetorno ? onVoltar : () => {}}
           icon={possuiRetorno ? faArrowCircleLeft : faDotCircle}
           data-testid={possuiRetorno ? 'icon_fa_arrow_circle_left' : 'icon_fa_dot_circle'}
         />
-        <UnicredHeaderContainer.Titulo>{titulo}</UnicredHeaderContainer.Titulo>
-      </UnicredHeaderContainer.Retorno>
-    </UnicredHeaderContainer.Descricao>
-    <UnicredHeaderContainer.Selects>
+        <HeaderContainer.Titulo>{titulo}</HeaderContainer.Titulo>
+      </HeaderContainer.Retorno>
+    </HeaderContainer.Descricao>
+    <HeaderContainer.Selects>
       {
         exibirTipoOperacao && (
           <Select
-            data-testid="unicred_header_select_tipo_operacao"
+            data-testid="header_select_tipo_operacao"
             disabled={desabilitarTipoOperacao}
             opcaoVazia={itensTipoOperacao.length === 0}
             itens={itensTipoOperacao}
@@ -55,7 +55,7 @@ const Header = ({
       {
         exibirCooperativa && (
           <Select
-            data-testid="unicred_header_select_cooperativa"
+            data-testid="header_select_cooperativa"
             disabled={desabilitarCooperativa}
             opcaoVazia={itensCooperativa.length === 0}
             itens={itensCooperativa}
@@ -68,7 +68,7 @@ const Header = ({
       {
         exibirAgencia && (
           <Select
-            data-testid="unicred_header_select_agencia"
+            data-testid="header_select_agencia"
             disabled={desabilitarAgencia}
             opcaoVazia={itensAgencia.length === 0}
             itens={itensAgencia}
@@ -78,8 +78,8 @@ const Header = ({
           />
         )
       }
-    </UnicredHeaderContainer.Selects>
-  </UnicredHeaderContainer>
+    </HeaderContainer.Selects>
+  </HeaderContainer>
 );
 
 Header.propTypes = {

@@ -9,8 +9,8 @@ export default class Home extends Component {
       tipoOperacoes: [],
       agenciaSelecionada: null,
       cooperativaSelecionada: null,
-      erroAoCarregar: false,
-      estaCarregando: true,
+      erro: false,
+      carregando: true,
     };
 
     componentDidMount(): void {
@@ -32,11 +32,11 @@ export default class Home extends Component {
             });
         } catch (e) {
             this.setState({
-                erroAoCarregar: true,
+                erro: true,
             })
         } finally {
             this.setState({
-                estaCarregando: false,
+                carregando: false,
             })
         }
 
@@ -55,13 +55,13 @@ export default class Home extends Component {
     }
 
     render() {
-        if (this.state.estaCarregando) {
+        if (this.state.carregando) {
             return (
                 <div>Carregando...</div>
             );
         }
 
-        if(this.state.erroAoCarregar) {
+        if(this.state.erro) {
             return (
                 <div>Ocorreu um erro ao carregar dados da aplicação. Tente novamente mais tarde.</div>
             )

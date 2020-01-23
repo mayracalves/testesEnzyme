@@ -5,7 +5,7 @@ const Color = cor => css`
 `;
 
 export default styled.h1.attrs({
-  'data-testid': 'unicred_header_titulo',
+  'data-testid': 'header_titulo',
 })`
     text-transform: uppercase;
     vertical-align: middle;
@@ -15,5 +15,5 @@ export default styled.h1.attrs({
     font-size: 24px;
     margin: 0 0 0 5px;
 
-    ${({ theme: { UnicredHeaderCorPrimaria: cor } }) => Color(cor)}
+    ${({ theme: { HeaderCorPrimaria: cor } }) => Color(cor)}
 `;

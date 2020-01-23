@@ -5,7 +5,7 @@ import Header from './Header';
 import { itensAgencia, itensCooperativa, itensTipoOperacao } from './Header.constants';
 
 describe('Header', () => {
-  it('deve renderizar unicred_header_titulo com valor passado por titulo', () => {
+  it('deve renderizar header_titulo com valor passado por titulo', () => {
     const wrapper = mount(
       <Header
         possuiRetorno={false}
@@ -22,32 +22,10 @@ describe('Header', () => {
         onChangeTipoOperacao={() => {}}
       />,
     );
-    expect(wrapper.find('[data-testid="unicred_header_titulo"]').text()).toEqual('Titulo');
+    expect(wrapper.find('[data-testid="header_titulo"]').text()).toEqual('Titulo');
   });
 
-  it('nao deve renderizar unicred_header_select_tipo_operacao', () => {
-    const wrapper = mount(
-      <Header
-        possuiRetorno={false}
-        titulo="Titulo"
-        valorCooperativa="566"
-        valorAgencia="Agencia 1"
-        valorTipoOperacao="Desconto"
-        itensAgencia={itensAgencia}
-        itensCooperativa={itensCooperativa}
-        itensTipoOperacao={itensTipoOperacao}
-        onVoltar={() => {}}
-        onChangeAgencia={() => {}}
-        onChangeCooperativa={() => {}}
-        onChangeTipoOperacao={() => {}}
-        exibirAgencia
-      />,
-    );
-    const retorno = wrapper.find('[data-testid="unicred_header_select_tipo_operacao"]').length;
-    expect(retorno).toEqual(0);
-  });
-
-  it('nao deve renderizar unicred_header_select_cooperativa', () => {
+  it('nao deve renderizar header_select_tipo_operacao', () => {
     const wrapper = mount(
       <Header
         possuiRetorno={false}
@@ -65,11 +43,33 @@ describe('Header', () => {
         exibirAgencia
       />,
     );
-    const retorno = wrapper.find('[data-testid="unicred_header_select_cooperativa"]').length;
+    const retorno = wrapper.find('[data-testid="header_select_tipo_operacao"]').length;
     expect(retorno).toEqual(0);
   });
 
-  it('nao deve renderizar unicred_header_select_agencia', () => {
+  it('nao deve renderizar header_select_cooperativa', () => {
+    const wrapper = mount(
+      <Header
+        possuiRetorno={false}
+        titulo="Titulo"
+        valorCooperativa="566"
+        valorAgencia="Agencia 1"
+        valorTipoOperacao="Desconto"
+        itensAgencia={itensAgencia}
+        itensCooperativa={itensCooperativa}
+        itensTipoOperacao={itensTipoOperacao}
+        onVoltar={() => {}}
+        onChangeAgencia={() => {}}
+        onChangeCooperativa={() => {}}
+        onChangeTipoOperacao={() => {}}
+        exibirAgencia
+      />,
+    );
+    const retorno = wrapper.find('[data-testid="header_select_cooperativa"]').length;
+    expect(retorno).toEqual(0);
+  });
+
+  it('nao deve renderizar header_select_agencia', () => {
     const wrapper = mount(
       <Header
         possuiRetorno={false}
@@ -87,7 +87,7 @@ describe('Header', () => {
         exibirTipoOperacao
       />,
     );
-    const retorno = wrapper.find('[data-testid="unicred_header_select_agencia"]').length;
+    const retorno = wrapper.find('[data-testid="header_select_agencia"]').length;
     expect(retorno).toEqual(0);
   });
 
@@ -110,7 +110,7 @@ describe('Header', () => {
   //       exibirTipoOperacao
   //     />,
   //   );
-  //   wrapper.find('[data-testid="unicred_header_select_tipo_operacao"]').first().prop('onChange')();
+  //   wrapper.find('[data-testid="header_select_tipo_operacao"]').first().prop('onChange')();
   //   expect(onChangeTipoOperacao).toHaveBeenCalled();
   // });
   //
@@ -133,7 +133,7 @@ describe('Header', () => {
   //       exibirCooperativa
   //     />,
   //   );
-  //   wrapper.find('[data-testid="unicred_header_select_cooperativa"]').first().prop('onChange')();
+  //   wrapper.find('[data-testid="header_select_cooperativa"]').first().prop('onChange')();
   //   expect(onChangeCooperativa).toHaveBeenCalled();
   // });
   //
@@ -156,7 +156,7 @@ describe('Header', () => {
   //       exibirAgencia
   //     />,
   //   );
-  //   const onChange = wrapper.find('[data-testid="unicred_header_select_agencia"]').first().prop('onChange')();
+  //   const onChange = wrapper.find('[data-testid="header_select_agencia"]').first().prop('onChange')();
   //   expect(onChangeAgencia).toHaveBeenCalled();
   // });
 
@@ -185,13 +185,13 @@ describe('Header', () => {
       );
     });
 
-    it('deve renderizar unicred_header_select_agencia com prop disabled igual a true', () => {
-      const disabled = wrapper.find('[data-testid="unicred_header_select_agencia"]').first().prop('disabled');
+    it('deve renderizar header_select_agencia com prop disabled igual a true', () => {
+      const disabled = wrapper.find('[data-testid="header_select_agencia"]').first().prop('disabled');
       expect(disabled).toEqual(true);
     });
 
     it('nao deve executar callback de onAgenciaChange', () => {
-      wrapper.find('[data-testid="unicred_header_select_agencia"]').first().simulate('click');
+      wrapper.find('[data-testid="header_select_agencia"]').first().simulate('click');
       expect(onChangeAgencia).not.toHaveBeenCalled();
     });
   });
@@ -221,13 +221,13 @@ describe('Header', () => {
       );
     });
 
-    it('deve renderizar unicred_header_select_cooperativa com prop disabled igual a true', () => {
-      const disabled = wrapper.find('[data-testid="unicred_header_select_cooperativa"]').first().prop('disabled');
+    it('deve renderizar header_select_cooperativa com prop disabled igual a true', () => {
+      const disabled = wrapper.find('[data-testid="header_select_cooperativa"]').first().prop('disabled');
       expect(disabled).toEqual(true);
     });
 
     it('nao deve executar callback onChangeCooperativa', () => {
-      wrapper.find('[data-testid="unicred_header_select_cooperativa"]').first().simulate('click');
+      wrapper.find('[data-testid="header_select_cooperativa"]').first().simulate('click');
       expect(onChangeCooperativa).not.toHaveBeenCalled();
     });
   });
@@ -257,13 +257,13 @@ describe('Header', () => {
       );
     });
 
-    it('deve renderizar unicred_header_select_tipo_operacao com prop disabled igual a true', () => {
-      const disabled = wrapper.find('[data-testid="unicred_header_select_tipo_operacao"]').first().prop('disabled');
+    it('deve renderizar header_select_tipo_operacao com prop disabled igual a true', () => {
+      const disabled = wrapper.find('[data-testid="header_select_tipo_operacao"]').first().prop('disabled');
       expect(disabled).toEqual(true);
     });
 
     it('nao deve executar callback onChangeTipoOperacao', () => {
-      wrapper.find('[data-testid="unicred_header_select_tipo_operacao"]').first().simulate('click');
+      wrapper.find('[data-testid="header_select_tipo_operacao"]').first().simulate('click');
       expect(onChangeTipoOperacao).not.toHaveBeenCalled();
     });
   });
