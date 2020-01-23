@@ -1,9 +1,23 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { shallow, mount } from 'enzyme';
+import App from "./App";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('APP', () => {
+  beforeEach(() => {
+    console.log('primeiro beforeEach' + new Date().getMilliseconds());
+  });
+
+  describe('quando inicializa', () => {
+    beforeEach(() => {
+      console.log('segundo beforeEach' + new Date().getMilliseconds());
+    });
+
+    test('a', () => {
+      expect(true).toEqual(true);
+    });
+
+    it('b', () => {
+      expect(true).toEqual(true);
+    });
+  });
 });

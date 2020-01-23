@@ -1,44 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Enzyme e Jest Para Testes Unitários com React
 
-## Available Scripts
+### Tópicos
 
-In the project directory, you can run:
+- `test`, `it`, `beforeEach`, `describe` para Jest.
+- `shallow`, `render`, `mount` rendering functions.
+- utilizando o find do enzyme.
+- importância das snapshots para css.
+- Mock de Propriedades.
+- Mock de Módulos/Dependências.
+- como fazer mock de modulos.
+- Enzyme com Hooks.
+- Enzyme com Classes.
+- Enzyme com MobX.
 
-### `npm start`
+###### Diferenças entre `test`, `it` e `describe`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+No jest todos podem funcionar juntos. O teste que será rodado será o que estiver dentro do callback do `test` ou do `it`. A grande única diferença entre eles é que com o `test` podemos ter cenários de testes isolados sem a necessidade de se utilizar os demais facilitadores, como o `describe`, `beforeEach`, `afterEach`;
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+A grande vantagem de se utilizar o `describe` é a possilidade de poder fazer aninhamento entre vários outros `describe`.
 
-### `npm test`
+Um erro comum é considerar que cada `beforeEach` irá executar para cada `describe`, a lógica de execução deve ser pensada do ponto de vista do `it` ou do `test`, sendo assim, para cada `ir` ou `test` será executado um `beforeEach` utilizando a ordem de nestagem. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```typescript jsx
+describe('APP', () => {
+  beforeEach(() => {
+    console.log('primeiro beforeEach' + new Date().getMilliseconds());
+  });
 
-### `npm run build`
+  describe('quando inicializa', () => {
+    beforeEach(() => {
+      console.log('segundo beforeEach' + new Date().getMilliseconds());
+    });
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    test('a', () => {
+      expect(true).toEqual(true);
+    });
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    it('b', () => {
+      expect(true).toEqual(true);
+    });
+  });
+});
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+No exemplo superior para o test 'a', será executado o primeiro `beforeEach` e depois o segundo `beforeEach`, para o test 'b', novamente, o primeiro `beforeEach` e após o segundo `beforeEach`;
 
-### `npm run eject`
+###### Diferenças Entre `shallow`, `mount` e `render`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###### Com Classes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Quando utilizamos o `shallow` num component de classe, podemos tirar proveito do live cycles. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Porém, quando não quisermos utilizar os live cycles, podemos desabilitar a execução deles através de uma config: `disableLifecycleMethods`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Além disso, outra funcionalidade que o enzyme nos disponibiliza é poder acessar os métodos da classe para poder testá-los de forma isolada. Para acessar os métodos basta utilziar o `.instance()`.
 
-## Learn More
+###### Com Hooks
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+No hooks samos mais limitados quando queremos testar nosso component. Se formos utilizar o `shallow`, não podemos utilizar o `useEffects`, e não teremos como acessar funções internas do component. A manipulação das variáveis internas através do `useState` funciona normalmente. Caso for utilizado o `mount` invés do `shallow`, ganhamos a execução do `useEffect`, porém o acessos a "métodos" internos do component não é possível.
