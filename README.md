@@ -8,7 +8,6 @@
 - Mock de Propriedades.
 - Mock de Módulos/Dependências.
 - Enzyme com Classes.
-- Enzyme com Hooks.
 - Enzyme com MobX.
 
 ###### Diferenças entre `test`, `it` e `describe`
