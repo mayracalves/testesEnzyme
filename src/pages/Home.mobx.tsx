@@ -13,18 +13,18 @@ export default class Home extends Component<{ store?: Store }> {
   render() {
     if (this.props.store?.carregando) {
       return (
-        <div>Carregando...</div>
+        <div data-testid="home_carregando">Carregando...</div>
       );
     }
 
     if (this.props.store?.erro) {
       return (
-        <div>Ocorreu um erro ao carregar dados da aplicação. Tente novamente mais tarde.</div>
+        <div data-testid="home_erro">Ocorreu um erro ao carregar dados da aplicação. Tente novamente mais tarde.</div>
       )
     }
 
     return (
-      <div>
+      <div style={{width: '50%', margin: '0 auto'}}>
         <Header
           titulo="Home"
           possuiRetorno={false}

@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3ea299b-2635-49e6-9339-16c922218a25" name="Default Changelist" comment="">
+    <list default="true" id="c3ea299b-2635-49e6-9339-16c922218a25" name="Default Changelist" comment="- altera README.md, adicionando mais tópicos.">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.spec.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.spec.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.spec.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.class.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.class.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.hooks.spec.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.hooks.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.mobx.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.mobx.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.mobx.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.spec.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +23,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Wgi5t5pUgdj0DLyAVgK3b94tAT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -34,8 +48,8 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -43,21 +57,8 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Integration Test: Home MobX">
-    <configuration name="Header" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Header/Header.spec.tsx" />
-      <test-names>
-        <test-name value="Header" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Integration Test: Home Hooks.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Integration Test: Home.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia">
+    <configuration name="Integration Test: Home Hooks.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -67,46 +68,64 @@
       <test-file value="$PROJECT_DIR$/src/pages/Home.hooks.spec.tsx" />
       <test-names>
         <test-name value="Integration Test: Home Hooks" />
+        <test-name value="deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Integration Test: Home MobX.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.mobx.spec.tsx" />
+      <test-names>
+        <test-name value="Integration Test: Home MobX" />
+        <test-name value="deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Integration Test: Home.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" />
+      <test-names>
+        <test-name value="Integration Test: Home" />
+        <test-name value="deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Integration Test: Home.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" />
+      <test-names>
+        <test-name value="Integration Test: Home" />
         <test-name value="deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Integration Test: Home MobX" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit Test: Home.carregarElementos().deve chamar buscarAgencias, buscarCooperativas e definir agencia e cooperativa" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/pages/Home.mobx.spec.tsx" />
-      <test-names>
-        <test-name value="Integration Test: Home MobX" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Unit Test: Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
+      <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/pages/Home.class.spec.tsx" />
       <test-names>
         <test-name value="Unit Test: Home" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Unit Test: Select" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Select/Select.spec.tsx" />
-      <test-names>
-        <test-name value="Unit Test: Select" />
+        <test-name value="carregarElementos()" />
+        <test-name value="deve chamar buscarAgencias, buscarCooperativas e definir agencia e cooperativa" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -125,25 +144,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Integration Test: Home MobX" />
-        <item itemvalue="Jest.Unit Test: Select" />
-        <item itemvalue="Jest.Header" />
-        <item itemvalue="Jest.Unit Test: Home" />
-        <item itemvalue="Jest.Integration Test: Home Hooks.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" />
+        <item itemvalue="Jest.Integration Test: Home.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+        <item itemvalue="Jest.Integration Test: Home Hooks.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+        <item itemvalue="Jest.Integration Test: Home MobX.deve alterar valor de home_agencia_selecionada quando trocar valor de agencia" />
+        <item itemvalue="Jest.Integration Test: Home.deve alterar valor de home_cooperativa_selecionada quando trocar valor da cooperativa" />
+        <item itemvalue="Jest.Unit Test: Home.carregarElementos().deve chamar buscarAgencias, buscarCooperativas e definir agencia e cooperativa" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -158,7 +165,9 @@
       <workItem from="1579577460812" duration="14197000" />
       <workItem from="1579747488393" duration="7725000" />
       <workItem from="1579755238991" duration="5010000" />
-      <workItem from="1579788867543" duration="13910000" />
+      <workItem from="1579788867543" duration="14719000" />
+      <workItem from="1579804883752" duration="11739000" />
+      <workItem from="1591937022367" duration="839000" />
     </task>
     <task id="LOCAL-00001" summary="- configurações e informações iniciais.">
       <created>1579741947814</created>
@@ -195,11 +204,18 @@
       <option name="project" value="LOCAL" />
       <updated>1579802742134</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- altera README.md, adicionando mais tópicos.">
+      <created>1579804287268</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579804287268</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- configurações e informações iniciais." />
@@ -207,7 +223,8 @@
     <MESSAGE value="- adição dos exemplos com hooks." />
     <MESSAGE value="- correção de todos os testes e testes com hooks e classe." />
     <MESSAGE value="- adiciona teste de mobx" />
-    <option name="LAST_COMMIT_MESSAGE" value="- adiciona teste de mobx" />
+    <MESSAGE value="- altera README.md, adicionando mais tópicos." />
+    <option name="LAST_COMMIT_MESSAGE" value="- altera README.md, adicionando mais tópicos." />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="200" width="800" height="677" key="#TypeScript" timestamp="1579792187036">
@@ -222,11 +239,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="333" y="329" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1579752740244" />
-    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2" timestamp="1579802742017">
+    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2" timestamp="1579816742253">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="204" y="175" width="782" height="801" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1579756397452" />
-    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579802742017" />
+    <state x="314" y="138" width="1184" height="801" key="CommitChangelistDialog2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579816742253" />
     <state width="546" height="656" key="DebuggerActiveHint" timestamp="1579794815674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -240,106 +257,125 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="659" y="388" width="424" height="486" key="FileChooserDialogImpl/0.0.2560.1080@0.0.2560.1080" timestamp="1579743725402" />
-    <state width="1899" height="304" key="GridCell.Tab.0.bottom" timestamp="1579801740149">
+    <state width="1345" height="289" key="GridCell.Tab.0.bottom" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222921" />
-    <state width="1899" height="304" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579801740149" />
+    <state width="1345" height="267" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579815990208" />
+    <state width="1345" height="289" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.0.bottom/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
-    <state width="1899" height="304" key="GridCell.Tab.0.center" timestamp="1579801740149">
+    <state width="1345" height="289" key="GridCell.Tab.0.center" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222920" />
-    <state width="1899" height="304" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579801740149" />
+    <state width="1345" height="267" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579815990208" />
+    <state width="1345" height="289" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.0.center/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
-    <state width="1899" height="304" key="GridCell.Tab.0.left" timestamp="1579801740149">
+    <state width="1345" height="289" key="GridCell.Tab.0.left" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222920" />
-    <state width="1899" height="304" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579801740149" />
+    <state width="1345" height="267" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579815990208" />
+    <state width="1345" height="289" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.0.left/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
-    <state width="1899" height="304" key="GridCell.Tab.0.right" timestamp="1579801740149">
+    <state width="1345" height="289" key="GridCell.Tab.0.right" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1569" height="269" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1579755222921" />
-    <state width="1899" height="304" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579801740149" />
+    <state width="1345" height="267" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579815990208" />
+    <state width="1345" height="289" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.0.right/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579790002169" />
-    <state width="1899" height="243" key="GridCell.Tab.1.bottom" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.1.bottom" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="289" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
     <state width="1345" height="243" key="GridCell.Tab.1.bottom/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
-    <state width="1899" height="243" key="GridCell.Tab.1.center" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.1.center" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="289" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.1.center/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
-    <state width="1899" height="243" key="GridCell.Tab.1.left" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.1.left" timestamp="1579874317162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="289" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317162" />
     <state width="1345" height="243" key="GridCell.Tab.1.left/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
-    <state width="1899" height="243" key="GridCell.Tab.1.right" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.1.right" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="289" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
     <state width="1345" height="243" key="GridCell.Tab.1.right/288.1080.1366.768/0.0.1920.1080@288.1080.1366.768" timestamp="1579789923191" />
-    <state width="1899" height="243" key="GridCell.Tab.2.bottom" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.2.bottom" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.2.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.2.center" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.2.bottom/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442915" />
+    <state width="1345" height="289" key="GridCell.Tab.2.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.2.center" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.2.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.2.left" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.2.center/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.2.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.2.left" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.2.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.2.right" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.2.left/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.2.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.2.right" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.2.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.3.bottom" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.2.right/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442914" />
+    <state width="1345" height="289" key="GridCell.Tab.2.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.3.bottom" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.3.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.3.center" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.3.bottom/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442918" />
+    <state width="1345" height="289" key="GridCell.Tab.3.bottom/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.3.center" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.3.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.3.left" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.3.center/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442917" />
+    <state width="1345" height="289" key="GridCell.Tab.3.center/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.3.left" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.3.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
-    <state width="1899" height="243" key="GridCell.Tab.3.right" timestamp="1579795879810">
+    <state width="1345" height="289" key="GridCell.Tab.3.left/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442915" />
+    <state width="1345" height="289" key="GridCell.Tab.3.left/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
+    <state width="1345" height="289" key="GridCell.Tab.3.right" timestamp="1579874317163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="243" key="GridCell.Tab.3.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579795879810" />
+    <state width="1345" height="289" key="GridCell.Tab.3.right/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813442917" />
+    <state width="1345" height="289" key="GridCell.Tab.3.right/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579874317163" />
     <state x="362" y="289" width="456" height="574" key="RollbackChangesDialog" timestamp="1579743275898">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="362" y="289" width="456" height="574" key="RollbackChangesDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1579743275898" />
-    <state x="88" y="109" width="917" height="732" key="SettingsEditor" timestamp="1579749058178">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="93" y="53" width="1218" height="730" key="SettingsEditor" timestamp="1579816722762">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="88" y="109" width="917" height="732" key="SettingsEditor/0.0.2560.1080@0.0.2560.1080" timestamp="1579749058178" />
+    <state x="47" y="38" width="1218" height="730" key="SettingsEditor/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579813546334" />
+    <state x="93" y="53" key="SettingsEditor/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579816722762" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1579802531132">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="445" key="SwitcherDM/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579802531132" />
-    <state x="555" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579800745866">
+    <state x="555" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579804288575">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800745866" />
+    <state x="555" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579804288575" />
     <state x="1627" y="284" width="605" height="512" key="find.popup" timestamp="1579784175320">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1627" y="284" width="605" height="512" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1579784175320" />
-    <state x="1058" y="364" width="672" height="678" key="search.everywhere.popup" timestamp="1579800142888">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="753" y="259" width="672" height="483" key="search.everywhere.popup" timestamp="1579815940846">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="1411" y="364" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1579757982139" />
+    <state x="753" y="259" width="672" height="483" key="search.everywhere.popup/288.1080.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1579815940846" />
     <state x="1058" y="364" width="672" height="678" key="search.everywhere.popup/288.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579800142888" />
   </component>
   <component name="XDebuggerManager">
@@ -347,9 +383,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/Home.class.tsx</url>
-          <line>68</line>
-          <properties lambdaOrdinal="-1" />
+          <line>69</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Home.class.tsx</url>
+          <line>22</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

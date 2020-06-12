@@ -14,7 +14,7 @@ export default class Home extends Component {
     carregando: true,
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.carregarElementos();
   }
 
@@ -66,6 +66,7 @@ export default class Home extends Component {
         <div data-testid="home_erro">Ocorreu um erro ao carregar dados da aplicação. Tente novamente mais tarde.</div>
       )
     }
+
     return (
       <div>
         <Header
@@ -79,8 +80,12 @@ export default class Home extends Component {
           exibirCooperativa
         />
         <div>
-          <div data-testid="home_cooperativa_selecionada">Cooperativa Selecionada: {this.state.cooperativa}</div>
-          <div data-testid="home_agencia_selecionada">Agencia Selecionada: {this.state.agencia}</div>
+          <div data-testid="home_cooperativa_selecionada">
+            Cooperativa Selecionada: {this.state.cooperativa}
+          </div>
+          <div data-testid="home_agencia_selecionada">
+            Agencia Selecionada: {this.state.agencia}
+          </div>
         </div>
       </div>
     );
