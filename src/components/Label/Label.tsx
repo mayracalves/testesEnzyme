@@ -1,10 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Container from './StyledComponents';
+import Container from "./StyledComponents";
 
-const Label = ({nome, descricaoLabel}) => (
-  <Container htmlFor={nome}>{descricaoLabel}</Container>
+const Label = ({ nome, descricaoLabel }) => (
+  <Container data-testid="label_container" htmlFor={nome}>
+    {descricaoLabel}
+  </Container>
 );
 
 Label.propTypes = {

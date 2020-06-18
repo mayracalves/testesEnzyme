@@ -1,21 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import UniSelect from "./StyledComponents";
+import Label from "../Label/Label";
 
-import UniSelect from './StyledComponents';
-import Label from '../Label/Label';
-
-const Select = ({
-  itens,
-  onChange,
-  title,
-  value,
-  disabled,
-}) => (
+const Select = ({ itens, onChange, title, value, disabled }) => (
   <UniSelect>
-    <Label
-      nome={title}
-      descricaoLabel={title}
-    />
+    <Label nome={title} descricaoLabel={title} data-testid="select_label"/>
     <UniSelect.Select
       data-testid={`select_${title}`}
       onChange={e => onChange(e.currentTarget.value)}
@@ -23,16 +13,16 @@ const Select = ({
       disabled={disabled}
       autoComplete="nope"
     >
-      {
-        itens.map(item => (
-          <UniSelect.Option
-            key={item.value}
-            value={item.value}
-          >
-            {item.title}
-          </UniSelect.Option>
-        ))
-      }
+      {itens.map((item, index) => (
+        <UniSelect.Option
+          data-testid={`select_option_${index}`}
+          //className={'option'}
+          key={item.value}
+          value={item.value}
+        >
+          {item.title}
+        </UniSelect.Option>
+      ))}
     </UniSelect.Select>
   </UniSelect>
 );
@@ -46,8 +36,8 @@ Select.propTypes = {
 };
 
 Select.defaultProps = {
-  value: 'Selecione',
-  title: '',
+  value: "Selecione",
+  title: "",
   itens: [],
   onChange: () => ({}),
 };
